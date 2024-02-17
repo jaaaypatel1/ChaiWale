@@ -1,0 +1,25 @@
+button {
+    width: 100px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input{
+    width: 1500px;
+    height: 250px
+}
+
+.textStyle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
