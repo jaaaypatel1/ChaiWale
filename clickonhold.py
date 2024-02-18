@@ -10,7 +10,7 @@ while True:
     distance = ((current_x - last_click_x) ** 2 + (current_y - last_click_y) ** 2) ** 0.5  # Euclidean distance
 
     if distance <= 100:  # Check if within 100 pixels of last click position
-        if time.time() - start_time >= 2:
+        if time.time() - start_time >= 1.5:
             pyautogui.click()
             start_time = time.time()
     else:
