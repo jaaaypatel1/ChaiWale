@@ -5,12 +5,12 @@ let deleteKey = document.querySelector(".delete");
 let capsLockKey = document.querySelector(".capsLock")
 let allKeys = document.querySelectorAll(".key");
 let isCaps = false;
-
+let userEntry= "";
 
 enterKey.addEventListener("click", function(){
-    let content = textContainer.innerText;
-    let newContent = content + "\n";
-    textContainer.innerText = newContent; 
+    userEntry = textContainer.innerText;
+    textContainer.innerText = ""; 
+
 });
 
 spaceKey.addEventListener("click", function(){
@@ -50,3 +50,4 @@ for(let key of allKeys){
         })
     }
 }
+
