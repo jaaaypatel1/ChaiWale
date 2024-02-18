@@ -15,8 +15,8 @@ enterKey.addEventListener("click", function(){
 
 spaceKey.addEventListener("click", function(){
     let content = textContainer.innerText;
-    let newContent = content + " ";
-    textContainer.innerText = newContent;
+    let newc = content + '\xa0';
+    textContainer.innerText = newc;
 });
 
 deleteKey.addEventListener("click", function(){
