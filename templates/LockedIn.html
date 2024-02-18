@@ -4,29 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locked In.</title>
-    <style>
-        h1 {
-          text-align: center;
-        }
-        
-        h2 {
-          text-align: left;
-        }
-        
-        h3 {
-          text-align: right;
-        }
-        body { background-color: #1eecff; }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 25%;
-        }
-        </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block head %} {% endblock %}
+    
 </head>
 <body>
+    {% block body %} {% endblock %}
     <h1>Locked In.</h1>
     <h2>What is Locked In Syndrome?</h2>
     <p>Locked-in syndrome is a rare disorder of the nervous system. 
@@ -36,8 +19,14 @@
     <h2>Project Overview</h2>
     <p>Our approach to helping people with Locked-in syndrome communicate is through an eye tracking keyboard. Users look at specific
         keys on the virtual keyboard and we use eye tracking to detect which key they are looking at. The eye tracking technology is a plugin from ___. We
-        modified it so that __.
+        modified it so that __. 
     </p>
+    <h2>Project Demo</h2>
+    <p>Please click here to download the .zip: </p>
+        <form action="/" methods="POST"> 
+            <input type="submit" value="Download">
+        </form>
+    <p>Number of Dowloads: ___</p>
     <h2>About Us</h2>
     <p>Hi! We are team ChaiWala. We met during an internship at the Wright-Patterson Air Force Research Lab. 
         We are a group of Computer Science majors at Ohio State University. We hope you enjoy our project!!

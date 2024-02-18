@@ -1,5 +1,8 @@
 from gtts import gTTS
+from flask import Flask, request, render_template 
 import os
+
+app = Flask(__name__)
 
 def text_to_speech(text):
     # Initialize gTTS with the text to convert
@@ -14,3 +17,4 @@ def text_to_speech(text):
     
     
 text_to_speech('Hello, world! This is a test.')
+
