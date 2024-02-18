@@ -1,25 +1,61 @@
-button {
-    width: 100px;
-    height: 50px;
-}
-
-h1 {
-    text-align: center;
-}
-
-input{
-    width: 1500px;
-    height: 250px
-}
-
-.textStyle{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-}
-
-.center{
+body{
+    display:flex;
+    flex-wrap: column;
     align-items: center;
-    justify-content: center;
-    margin-left: auto; 
-    margin-right: auto;
+    justify-content: space-evenly;
+    height: 100vh;
+    background: whitesmoke;
+    font-size: 1.5rem;
+}
+
+textContainer{
+    width: 90vw;
+    height: 15vh;
+    background: white;
+    box-shadow: 0 0 20px 2px grey;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    font-family: sans-serif;
+
+
+}
+
+.keyboard{
+    height: 50vh;
+    width: 70vw;
+    background: darkgrey;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.row{
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+.secondLast{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.space{
+    width: 50%;
+    height: 2rem;
+    background: grey;
+}
+
+
+.key{
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.key:active{
+    background: white;
+
 }
